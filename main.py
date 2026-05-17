@@ -97,3 +97,6 @@ def generate_email_dataset(n_samples=1000):
         Subject: {np.random.choice(['Your', 'Monthly', 'Weekly'])} {selected_keywords[0].title()}
         
         Hello,
+        
+        {selected_keywords[1]}. You can view your details at:
+        {url}
