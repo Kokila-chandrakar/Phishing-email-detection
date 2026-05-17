@@ -181,3 +181,10 @@ def extract_structural_features(text):
 print("\n" + "="*80)
 print("EXTRACTING FEATURES...")
 print("="*80)
+
+feature_list = []
+for email in emails:
+    # Extract all features
+    url_features = extract_url_features(email)
+    keyword_features = extract_keyword_features(email)
+    structural_features = extract_structural_features(email)
