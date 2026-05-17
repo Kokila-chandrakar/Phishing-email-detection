@@ -197,3 +197,5 @@ for email in emails:
 X = pd.DataFrame(feature_list)
 y = np.array(labels)
 
+print(f"\nFeatures extracted: {X.shape[1]} features")
+print(f"Feature names: {list(X.columns)}")
