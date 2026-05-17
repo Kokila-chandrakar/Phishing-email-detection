@@ -192,3 +192,8 @@ for email in emails:
     # Combine all features
     all_features = {**url_features, **keyword_features, **structural_features}
     feature_list.append(all_features)
+
+# Create feature DataFrame
+X = pd.DataFrame(feature_list)
+y = np.array(labels)
+
