@@ -60,6 +60,11 @@ def generate_email_dataset(n_samples=1000):
             url = np.random.choice(phishing_urls)
         else:
             url = np.random.choice(safe_urls)
+            
         # Select phishing keywords
         num_keywords = np.random.randint(2, 5)
         selected_keywords = np.random.choice(phishing_keywords, num_keywords, replace=False)
+
+        # Create email content
+        email = f"""
+        Subject: {np.random.choice(['URGENT', 'Important', 'Security Alert', 'Action Required'])}: {selected_keywords[0].title()}
