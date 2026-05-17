@@ -106,3 +106,6 @@ def generate_email_dataset(n_samples=1000):
         Best regards,
         Customer Service
         """
+
+        emails.append(email)
+        labels.append(0)  # 0 for safe/legitimate
