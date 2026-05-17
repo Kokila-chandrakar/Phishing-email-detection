@@ -157,3 +157,11 @@ def extract_keyword_features(text):
         'unauthorized', 'click here', 'update now', 'immediately',
         'bank account', 'credit card', 'password', 'social security'
     ]
+
+    features = {
+        'num_phishing_keywords': sum(text.lower().count(keyword) for keyword in phishing_indicators),
+        'has_urgent_language': any(word in text.lower() for word in ['urgent', 'immediately', 'asap']),
+        'has_threat': any(word in text.lower() for word in ['suspended', 'locked', 'closed', 'terminated'])
+    }
+    
+    return features
