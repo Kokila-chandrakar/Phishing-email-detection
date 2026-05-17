@@ -79,3 +79,6 @@ def generate_email_dataset(n_samples=1000):
         Best regards,
         Security Team
         """
+
+        emails.append(email)
+        labels.append(1)  # 1 for phishing
