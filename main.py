@@ -205,3 +205,5 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 print(f"\nTraining set size: {len(X_train)}")
 print(f"Test set size: {len(X_test)}")
+print(f"Training distribution: {sum(y_train)} phishing, {len(y_train)-sum(y_train)} safe")
+print(f"Test distribution: {sum(y_test)} phishing, {len(y_test)-sum(y_test)} safe")
