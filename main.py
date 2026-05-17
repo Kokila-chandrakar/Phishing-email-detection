@@ -176,3 +176,8 @@ def extract_structural_features(text):
     }
     
     return features
+
+# Apply feature extraction to all emails
+print("\n" + "="*80)
+print("EXTRACTING FEATURES...")
+print("="*80)
