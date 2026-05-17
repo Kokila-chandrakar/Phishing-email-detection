@@ -118,3 +118,7 @@ emails, labels = generate_email_dataset(1000)
 print(f"Dataset created: {len(emails)} emails")
 print(f"Phishing: {sum(labels)} emails")
 print(f"Safe: {len(labels) - sum(labels)} emails")
+
+# Create DataFrame for better visualization
+df = pd.DataFrame({'email': emails, 'label': labels})
+df['label_name'] = df['label'].map({1: 'Phishing', 0: 'Safe'})
