@@ -42,3 +42,10 @@ def generate_email_dataset(n_samples=1000):
         "click here to verify", "update your payment", "account locked",
         "verify immediately"
     ]
+
+    # Legitimate keywords
+    safe_keywords = [
+        "newsletter", "your statement", "weekly digest", "transaction receipt",
+        "welcome to", "thank you for your purchase", "your subscription",
+        "account summary", "payment received", "order confirmed"
+    ]
