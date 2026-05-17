@@ -188,3 +188,7 @@ for email in emails:
     url_features = extract_url_features(email)
     keyword_features = extract_keyword_features(email)
     structural_features = extract_structural_features(email)
+
+    # Combine all features
+    all_features = {**url_features, **keyword_features, **structural_features}
+    feature_list.append(all_features)
