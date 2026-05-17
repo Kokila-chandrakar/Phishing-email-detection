@@ -165,3 +165,14 @@ def extract_keyword_features(text):
     }
     
     return features
+
+def extract_structural_features(text):
+    """Extract email structural features"""
+    features = {
+        'text_length': len(text),
+        'num_exclamation': text.count('!'),
+        'num_uppercase_words': sum(1 for word in text.split() if word.isupper() and len(word) > 2),
+        'has_deadline': any(word in text.lower() for word in ['24 hours', '48 hours', 'within', 'today'])
+    }
+    
+    return features
