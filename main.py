@@ -109,3 +109,12 @@ def generate_email_dataset(n_samples=1000):
 
         emails.append(email)
         labels.append(0)  # 0 for safe/legitimate
+
+    return emails, labels
+
+# Generate the dataset
+print("Generating synthetic email dataset...")
+emails, labels = generate_email_dataset(1000)
+print(f"Dataset created: {len(emails)} emails")
+print(f"Phishing: {sum(labels)} emails")
+print(f"Safe: {len(labels) - sum(labels)} emails")
