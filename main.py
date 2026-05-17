@@ -82,3 +82,8 @@ def generate_email_dataset(n_samples=1000):
 
         emails.append(email)
         labels.append(1)  # 1 for phishing
+
+    # Generate legitimate emails
+    for i in range(n_samples // 2):
+        # Select URL
+        url = np.random.choice(safe_urls)
