@@ -19,3 +19,11 @@ def generate_email_dataset(n_samples=1000):
     Generate synthetic email dataset with phishing and legitimate emails
     """
     
+    # Common phishing patterns
+    phishing_urls = [
+        "http://secure-paypal-verify.com", "https://amazon-account-update.net",
+        "http://bankofamerica-security.com", "https://appleid-verify.org",
+        "http://netflix-account-suspended.com", "https://chase-banking-alert.net",
+        "http://microsoft-security-update.com", "https://paypal-verification-service.com",
+        "bit.ly/3xYZ123", "tinyurl.com/secure-login"
+    ]
