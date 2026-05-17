@@ -34,3 +34,11 @@ def generate_email_dataset(n_samples=1000):
         "https://apple.com", "https://netflix.com", "https://chase.com",
         "https://microsoft.com", "https://google.com", "https://linkedin.com"
     ]
+
+    # Phishing keywords
+    phishing_keywords = [
+        "verify your account", "confirm your identity", "account suspended",
+        "urgent action required", "security alert", "unauthorized login",
+        "click here to verify", "update your payment", "account locked",
+        "verify immediately"
+    ]
