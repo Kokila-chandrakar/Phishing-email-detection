@@ -149,3 +149,11 @@ def extract_url_features(text):
     }
     
     return features
+
+def extract_keyword_features(text):
+    """Extract keyword-based features"""
+    phishing_indicators = [
+        'verify', 'confirm', 'urgent', 'suspended', 'security alert',
+        'unauthorized', 'click here', 'update now', 'immediately',
+        'bank account', 'credit card', 'password', 'social security'
+    ]
