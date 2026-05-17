@@ -139,3 +139,13 @@ def extract_url_features(text):
     # Find all URLs
     url_pattern = r'https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+[^\s]*|bit\.ly/\S+|tinyurl\.com/\S+'
     urls = re.findall(url_pattern, text)
+
+    features = {
+        'num_urls': len(urls),
+        'has_http': any('http://' in url for url in urls),
+        'has_url_shortener': any('bit.ly' in url or 'tinyurl' in url for url in urls),
+        'avg_url_length': np.mean([len(url) for url in urls]) if urls else 0,
+        'has_suspicious_tld': any(url.endswith(('.tk', '.ml', '.ga', '.cf', '.xyz')) for url in urls)
+    }
+    
+    return features
