@@ -132,3 +132,10 @@ print("\n" + "="*80)
 print("SAMPLE SAFE EMAIL:")
 print("="*80)
 print(df[df['label']==0]['email'].iloc[0])
+
+# Feature extraction functions
+def extract_url_features(text):
+    """Extract URL-related features from email text"""
+    # Find all URLs
+    url_pattern = r'https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+[^\s]*|bit\.ly/\S+|tinyurl\.com/\S+'
+    urls = re.findall(url_pattern, text)
