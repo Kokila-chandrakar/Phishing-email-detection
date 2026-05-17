@@ -91,3 +91,9 @@ def generate_email_dataset(n_samples=1000):
         # Select safe keywords
         num_keywords = np.random.randint(2, 4)
         selected_keywords = np.random.choice(safe_keywords, num_keywords, replace=False)
+
+        # Create email content
+        email = f"""
+        Subject: {np.random.choice(['Your', 'Monthly', 'Weekly'])} {selected_keywords[0].title()}
+        
+        Hello,
