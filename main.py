@@ -9,3 +9,13 @@ import re
 import seaborn as sns
 import matplotlib.pyplot as plt
 from urllib.parse import urlparse
+
+# Set random seed for reproducibility
+np.random.seed(42)
+
+# Create synthetic dataset
+def generate_email_dataset(n_samples=1000):
+    """
+    Generate synthetic email dataset with phishing and legitimate emails
+    """
+    
