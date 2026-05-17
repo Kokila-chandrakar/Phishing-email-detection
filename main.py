@@ -87,3 +87,7 @@ def generate_email_dataset(n_samples=1000):
     for i in range(n_samples // 2):
         # Select URL
         url = np.random.choice(safe_urls)
+
+        # Select safe keywords
+        num_keywords = np.random.randint(2, 4)
+        selected_keywords = np.random.choice(safe_keywords, num_keywords, replace=False)
