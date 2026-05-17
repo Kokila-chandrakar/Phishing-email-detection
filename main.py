@@ -52,3 +52,6 @@ def generate_email_dataset(n_samples=1000):
 
     emails = []
     labels = []
+
+    # Generate phishing emails
+    for i in range(n_samples // 2):
