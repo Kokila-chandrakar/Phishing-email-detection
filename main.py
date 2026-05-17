@@ -73,3 +73,9 @@ def generate_email_dataset(n_samples=1000):
         
         Please {selected_keywords[1]} by clicking the link below:
         {url}
+
+        Failure to {selected_keywords[2] if len(selected_keywords) > 2 else 'verify'} within 24 hours will result in account suspension.
+        
+        Best regards,
+        Security Team
+        """
