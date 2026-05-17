@@ -122,3 +122,8 @@ print(f"Safe: {len(labels) - sum(labels)} emails")
 # Create DataFrame for better visualization
 df = pd.DataFrame({'email': emails, 'label': labels})
 df['label_name'] = df['label'].map({1: 'Phishing', 0: 'Safe'})
+
+# Display sample emails
+print("\n" + "="*80)
+print("SAMPLE PHISHING EMAIL:")
+print("="*80)
