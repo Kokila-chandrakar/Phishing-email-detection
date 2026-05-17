@@ -55,3 +55,8 @@ def generate_email_dataset(n_samples=1000):
 
     # Generate phishing emails
     for i in range(n_samples // 2):
+        # Select random URL (80% chance of phishing URL, 20% legitimate URL to make it realistic)
+        if np.random.random() < 0.8:
+            url = np.random.choice(phishing_urls)
+        else:
+            url = np.random.choice(safe_urls)
