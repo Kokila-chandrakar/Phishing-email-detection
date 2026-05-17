@@ -100,3 +100,9 @@ def generate_email_dataset(n_samples=1000):
         
         {selected_keywords[1]}. You can view your details at:
         {url}
+
+                {selected_keywords[2] if len(selected_keywords) > 2 else 'Thank you for being a valued customer'}.
+        
+        Best regards,
+        Customer Service
+        """
