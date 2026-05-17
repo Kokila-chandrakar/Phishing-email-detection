@@ -49,3 +49,6 @@ def generate_email_dataset(n_samples=1000):
         "welcome to", "thank you for your purchase", "your subscription",
         "account summary", "payment received", "order confirmed"
     ]
+
+    emails = []
+    labels = []
