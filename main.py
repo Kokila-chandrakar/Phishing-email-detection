@@ -68,3 +68,8 @@ def generate_email_dataset(n_samples=1000):
         # Create email content
         email = f"""
         Subject: {np.random.choice(['URGENT', 'Important', 'Security Alert', 'Action Required'])}: {selected_keywords[0].title()}
+
+        {np.random.choice(phishing_keywords)}. Our system detected {np.random.choice(['suspicious activity', 'unusual login', 'multiple failed attempts'])}.
+        
+        Please {selected_keywords[1]} by clicking the link below:
+        {url}
