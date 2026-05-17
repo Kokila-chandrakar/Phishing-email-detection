@@ -27,3 +27,10 @@ def generate_email_dataset(n_samples=1000):
         "http://microsoft-security-update.com", "https://paypal-verification-service.com",
         "bit.ly/3xYZ123", "tinyurl.com/secure-login"
     ]
+    
+    # Legitimate URLs
+    safe_urls = [
+        "https://amazon.com", "https://paypal.com", "https://bankofamerica.com",
+        "https://apple.com", "https://netflix.com", "https://chase.com",
+        "https://microsoft.com", "https://google.com", "https://linkedin.com"
+    ]
