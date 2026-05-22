@@ -316,3 +316,10 @@ for i, email in enumerate(test_emails, 1):
     features = extract_url_features(email)
     features.update(extract_keyword_features(email))
     features.update(extract_structural_features(email))
+
+    # Create DataFrame
+    email_features = pd.DataFrame([features])
+    
+    # Predict
+    prediction = rf_model.predict(email_features)[0]
+    probability = rf_model.predict_proba(email_features)[0]
