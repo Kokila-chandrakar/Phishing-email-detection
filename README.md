@@ -151,3 +151,10 @@ Example:
 Prediction: ⚠️ PHISHING
 Confidence: 97%
 ```
+
+```bash
+Prediction: ✅ SAFE
+Confidence: 95%
+```
+
+---
