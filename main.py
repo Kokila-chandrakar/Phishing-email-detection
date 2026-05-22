@@ -234,3 +234,13 @@ print(classification_report(y_test, y_pred, target_names=['Safe', 'Phishing']))
 
 # Confusion Matrix
 cm = confusion_matrix(y_test, y_pred)
+
+# Plot confusion matrix
+plt.figure(figsize=(8, 6))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', 
+            xticklabels=['Safe', 'Phishing'], 
+            yticklabels=['Safe', 'Phishing'])
+plt.title('Confusion Matrix - Phishing Email Detection')
+plt.ylabel('Actual Label')
+plt.xlabel('Predicted Label')
+plt.show()
