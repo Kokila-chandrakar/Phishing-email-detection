@@ -72,3 +72,9 @@ The system performs the following steps:
 
 ### 1. Dataset Generation
 Creates synthetic phishing and legitimate emails.
+
+### 2. Feature Extraction
+Extracts:
+- URL-based features
+- Keyword-based indicators
+- Structural email patterns
