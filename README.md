@@ -78,3 +78,7 @@ Extracts:
 - URL-based features
 - Keyword-based indicators
 - Structural email patterns
+
+### 3. Model Training
+Uses a **Random Forest Classifier** for phishing detection.
+
