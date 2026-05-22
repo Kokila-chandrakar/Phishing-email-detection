@@ -49,3 +49,11 @@ This project analyzes email content, extracts security-related features, and cla
 git clone https://github.com/your-username/phishing-email-detector.git
 cd phishing-email-detector
 ```
+
+### 2️⃣ Install Dependencies
+
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn
+```
+
+---
