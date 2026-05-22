@@ -134,3 +134,11 @@ Example output:
 ```
 
 ---
+
+## 🖼️ Visualizations
+
+The project generates:
+- 📉 Confusion Matrix Heatmap
+- 📊 Feature Importance Graph
+
+---
