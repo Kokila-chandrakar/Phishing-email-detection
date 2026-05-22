@@ -265,3 +265,8 @@ plt.title('Top 10 Most Important Features for Phishing Detection')
 plt.gca().invert_yaxis()
 plt.tight_layout()
 plt.show()
+
+# Test with new email examples
+print("\n" + "="*80)
+print("TESTING WITH NEW EMAIL EXAMPLES:")
+print("="*80)
