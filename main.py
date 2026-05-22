@@ -310,3 +310,9 @@ If you don't verify within 48 hours, your account will be suspended.
 
 Security Team"""
 ]
+
+for i, email in enumerate(test_emails, 1):
+    # Extract features
+    features = extract_url_features(email)
+    features.update(extract_keyword_features(email))
+    features.update(extract_structural_features(email))
