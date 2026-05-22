@@ -19,3 +19,14 @@ This project analyzes email content, extracts security-related features, and cla
 - 📚 Synthetic dataset generation for training/testing
 
 ---
+
+## 🛠️ Tech Stack
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+
+---
