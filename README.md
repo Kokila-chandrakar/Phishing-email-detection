@@ -108,3 +108,11 @@ Tests the model on sample real-world style emails.
 - Verification requests
 - Threat-based wording
 - Suspicious phishing keywords
+
+### 📑 Structural Features
+- Email length
+- Exclamation marks
+- Uppercase word count
+- Deadline phrases
+
+---
