@@ -244,3 +244,9 @@ plt.title('Confusion Matrix - Phishing Email Detection')
 plt.ylabel('Actual Label')
 plt.xlabel('Predicted Label')
 plt.show()
+
+# Feature importance
+feature_importance = pd.DataFrame({
+    'feature': X.columns,
+    'importance': rf_model.feature_importances_
+}).sort_values('importance', ascending=False)
