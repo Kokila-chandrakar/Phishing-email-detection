@@ -30,3 +30,13 @@ This project analyzes email content, extracts security-related features, and cla
 - Seaborn
 
 ---
+
+## 📂 Project Structure
+
+```bash
+.
+├── main.py              # Main project file
+├── README.md            # Project documentation
+```
+
+---
