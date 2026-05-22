@@ -142,3 +142,12 @@ The project generates:
 - 📊 Feature Importance Graph
 
 ---
+
+## 🧪 Sample Predictions
+
+Example:
+
+```bash
+Prediction: ⚠️ PHISHING
+Confidence: 97%
+```
