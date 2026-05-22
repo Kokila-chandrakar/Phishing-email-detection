@@ -219,3 +219,9 @@ rf_model = RandomForestClassifier(
     random_state=42,
     class_weight='balanced'
 )
+
+rf_model.fit(X_train, y_train)
+
+# Make predictions
+y_pred = rf_model.predict(X_test)
+y_pred_proba = rf_model.predict_proba(X_test)[:, 1]
