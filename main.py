@@ -323,3 +323,10 @@ for i, email in enumerate(test_emails, 1):
     # Predict
     prediction = rf_model.predict(email_features)[0]
     probability = rf_model.predict_proba(email_features)[0]
+
+    print(f"\nTest Email {i}:")
+    print(f"Subject: {email.split(chr(10))[0][:50]}...")
+    print(f"Prediction: {'⚠️ PHISHING' if prediction == 1 else '✅ SAFE'}")
+    print(f"Confidence: {max(probability):.2%} (Safe: {probability[0]:.2%}, Phishing: {probability[1]:.2%})")
+
+# Model performance summary
