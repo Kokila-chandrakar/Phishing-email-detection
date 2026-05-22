@@ -40,3 +40,12 @@ This project analyzes email content, extracts security-related features, and cla
 ```
 
 ---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/phishing-email-detector.git
+cd phishing-email-detector
+```
