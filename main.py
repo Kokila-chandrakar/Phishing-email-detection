@@ -213,3 +213,9 @@ print("\n" + "="*80)
 print("TRAINING MODEL...")
 print("="*80)
 
+rf_model = RandomForestClassifier(
+    n_estimators=100,
+    max_depth=10,
+    random_state=42,
+    class_weight='balanced'
+)
