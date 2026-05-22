@@ -88,3 +88,8 @@ Displays:
 - Classification report
 - Confusion matrix
 - Feature importance
+
+### 5. Prediction
+Tests the model on sample real-world style emails.
+
+---
