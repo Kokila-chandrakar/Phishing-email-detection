@@ -158,3 +158,14 @@ Confidence: 95%
 ```
 
 ---
+
+## 🎯 Future Improvements
+
+- Add real-world email datasets
+- Deep learning integration
+- Real-time email scanning
+- Flask/FastAPI web deployment
+- Browser extension support
+- Email API integration
+
+---
