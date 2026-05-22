@@ -65,3 +65,10 @@ python main.py
 ```
 
 ---
+
+## 🧠 How It Works
+
+The system performs the following steps:
+
+### 1. Dataset Generation
+Creates synthetic phishing and legitimate emails.
