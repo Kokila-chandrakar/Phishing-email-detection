@@ -57,3 +57,11 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 ```
 
 ---
+
+## ▶️ Run the Project
+
+```bash
+python main.py
+```
+
+---
