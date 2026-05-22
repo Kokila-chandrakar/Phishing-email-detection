@@ -231,3 +231,6 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"\nModel Accuracy: {accuracy:.4f} ({accuracy*100:.2f}%)")
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred, target_names=['Safe', 'Phishing']))
+
+# Confusion Matrix
+cm = confusion_matrix(y_test, y_pred)
