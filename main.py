@@ -225,3 +225,9 @@ rf_model.fit(X_train, y_train)
 # Make predictions
 y_pred = rf_model.predict(X_test)
 y_pred_proba = rf_model.predict_proba(X_test)[:, 1]
+
+# Evaluate the model
+accuracy = accuracy_score(y_test, y_pred)
+print(f"\nModel Accuracy: {accuracy:.4f} ({accuracy*100:.2f}%)")
+print("\nClassification Report:")
+print(classification_report(y_test, y_pred, target_names=['Safe', 'Phishing']))
