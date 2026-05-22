@@ -207,3 +207,9 @@ print(f"\nTraining set size: {len(X_train)}")
 print(f"Test set size: {len(X_test)}")
 print(f"Training distribution: {sum(y_train)} phishing, {len(y_train)-sum(y_train)} safe")
 print(f"Test distribution: {sum(y_test)} phishing, {len(y_test)-sum(y_test)} safe")
+
+# Train Random Forest Classifier
+print("\n" + "="*80)
+print("TRAINING MODEL...")
+print("="*80)
+
