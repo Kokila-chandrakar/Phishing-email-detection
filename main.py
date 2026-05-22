@@ -250,3 +250,11 @@ feature_importance = pd.DataFrame({
     'feature': X.columns,
     'importance': rf_model.feature_importances_
 }).sort_values('importance', ascending=False)
+
+print("\n" + "="*80)
+print("FEATURE IMPORTANCE ANALYSIS:")
+print("="*80)
+for idx, row in feature_importance.head(10).iterrows():
+    print(f"{row['feature']:25s}: {row['importance']:.4f}")
+
+# Plot feature importance
