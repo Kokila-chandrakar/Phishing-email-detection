@@ -124,3 +124,13 @@ The model evaluates:
 - Precision
 - Recall
 - Confusion Matrix
+
+Example output:
+
+```bash
+✓ Accuracy: 95%
+✓ Precision: 94%
+✓ Recall: 96%
+```
+
+---
