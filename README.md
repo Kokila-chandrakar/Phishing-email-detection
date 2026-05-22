@@ -82,3 +82,9 @@ Extracts:
 ### 3. Model Training
 Uses a **Random Forest Classifier** for phishing detection.
 
+### 4. Evaluation
+Displays:
+- Accuracy score
+- Classification report
+- Confusion matrix
+- Feature importance
