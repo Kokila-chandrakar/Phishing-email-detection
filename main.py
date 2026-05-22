@@ -270,3 +270,43 @@ plt.show()
 print("\n" + "="*80)
 print("TESTING WITH NEW EMAIL EXAMPLES:")
 print("="*80)
+
+test_emails = [
+    """Subject: Your PayPal Account Has Been Limited
+
+Dear Customer,
+
+We noticed unusual activity on your account. To prevent unauthorized access, we have temporarily limited your account.
+
+Click here to verify your account immediately: http://paypal-verify-security.com
+
+Failure to verify within 24 hours will result in permanent account closure.
+
+Sincerely,
+PayPal Security Team""",
+
+    """Subject: Your Amazon Order #789-1234567-8901234
+
+Hello,
+
+Thank you for your purchase. Your order has been confirmed and will be shipped within 2 business days.
+
+View your order details: https://amazon.com/your-orders
+
+For any questions, please contact our customer service.
+
+Best regards,
+Amazon Customer Service""",
+
+    """Subject: URGENT: Bank Account Security Alert
+
+Dear Valued Customer,
+
+Your bank account has been accessed from an unrecognized device. Please confirm your identity immediately.
+
+Verify now: http://chase-security-alert.net
+
+If you don't verify within 48 hours, your account will be suspended.
+
+Security Team"""
+]
