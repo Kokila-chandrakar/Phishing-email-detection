@@ -258,3 +258,10 @@ for idx, row in feature_importance.head(10).iterrows():
     print(f"{row['feature']:25s}: {row['importance']:.4f}")
 
 # Plot feature importance
+plt.figure(figsize=(10, 6))
+plt.barh(feature_importance['feature'][:10], feature_importance['importance'][:10])
+plt.xlabel('Importance')
+plt.title('Top 10 Most Important Features for Phishing Detection')
+plt.gca().invert_yaxis()
+plt.tight_layout()
+plt.show()
