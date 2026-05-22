@@ -102,3 +102,9 @@ Tests the model on sample real-world style emails.
 - URL shorteners
 - Suspicious TLDs
 - Average URL length
+
+### 🧠 Keyword Features
+- Urgent language
+- Verification requests
+- Threat-based wording
+- Suspicious phishing keywords
