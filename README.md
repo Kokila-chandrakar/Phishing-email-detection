@@ -93,3 +93,12 @@ Displays:
 Tests the model on sample real-world style emails.
 
 ---
+
+## 🔍 Extracted Features
+
+### 🌐 URL Features
+- Number of URLs
+- HTTP usage
+- URL shorteners
+- Suspicious TLDs
+- Average URL length
