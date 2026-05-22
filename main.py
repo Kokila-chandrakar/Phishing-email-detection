@@ -330,3 +330,13 @@ for i, email in enumerate(test_emails, 1):
     print(f"Confidence: {max(probability):.2%} (Safe: {probability[0]:.2%}, Phishing: {probability[1]:.2%})")
 
 # Model performance summary
+print("\n" + "="*80)
+print("MODEL PERFORMANCE SUMMARY:")
+print("="*80)
+print(f"✓ Accuracy: {accuracy:.2%}")
+print(f"✓ True Positives (correctly identified phishing): {cm[1,1]}")
+print(f"✓ True Negatives (correctly identified safe): {cm[0,0]}")
+print(f"✓ False Positives (safe misclassified as phishing): {cm[0,1]}")
+print(f"✓ False Negatives (phishing misclassified as safe): {cm[1,0]}")
+print(f"✓ Precision (Phishing class): {cm[1,1]/(cm[1,1]+cm[0,1]):.2%}")
+print(f"✓ Recall (Phishing class): {cm[1,1]/(cm[1,1]+cm[1,0]):.2%}")
