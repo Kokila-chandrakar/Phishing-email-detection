@@ -186,3 +186,7 @@ Contributions are welcome!
 This project is open-source and available under the MIT License.
 
 ---
+
+## 👨‍💻 Author
+
+Developed with ❤️ using Machine Learning and Cybersecurity concepts.
