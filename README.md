@@ -116,3 +116,11 @@ Tests the model on sample real-world style emails.
 - Deadline phrases
 
 ---
+
+## 📊 Model Performance
+
+The model evaluates:
+- Accuracy
+- Precision
+- Recall
+- Confusion Matrix
